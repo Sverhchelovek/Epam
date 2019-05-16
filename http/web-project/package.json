@@ -1,9 +1,10 @@
 {
   "name": "web-project",
   "version": "1.0.0",
-  "description": "",
+  "description": "server",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -11,5 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "http": "0.0.0"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
