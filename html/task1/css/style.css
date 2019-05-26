@@ -1,5 +1,5 @@
 body {
-	color: #fff;
+	color: black;
 	font-family: sans-serif;
 }
 
@@ -16,4 +16,26 @@ ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
+}
+
+
+table{
+	border: 1px solid grey;
+	border-collapse: collapse;
+}
+
+tr{
+	border: 1px solid grey;
+}
+
+td{
+	border: 1px solid grey;
+}
+
+.fiction{
+	border: none;
+}
+
+div{
+	margin: 20px;
 }

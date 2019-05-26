@@ -19,6 +19,10 @@ ul{
 }
 
 
+.forBorders th{
+	border: 1px solid grey;
+}
+
 table{
 	border: 1px solid grey;
 	border-collapse: collapse;
@@ -30,10 +34,6 @@ tr{
 
 td{
 	border: 1px solid grey;
-}
-
-.fiction{
-	border: none;
 }
 
 div{
