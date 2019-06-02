@@ -1,0 +1,95 @@
+body {
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+	}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	color: yellowgreen;
+}
+
+.main-page{
+	height: 100vh;
+	align-items: stretch;
+	background-image: url(../img/bg-home.jpg);
+    background-size: cover;
+    width: 100%;	
+}
+
+.container{
+	width: 1244px;
+	margin: 0 auto;
+}
+
+.menu-page{
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 2rem;
+}
+
+.photo{
+	height: 9vh;
+	width: 13vh;
+	background-image: url(../img/about-me.jpg);
+    background-size: cover;
+}
+
+.menu__items{
+	display: flex;
+	justify-content: space-between;
+	width: 6%;
+}
+
+.menu__item{
+	margin-left: 10vh;
+	white-space: pre-wrap;
+}
+
+.mainInformation{
+	text-align: center;
+	color: #800080;
+	font-size: 20px;
+}
+
+.about-title{
+	font-size: 4rem;
+	margin: 0 auto;
+	color: #fff;
+}
+
+.header-text{
+	font-size: 2rem;
+	color: #3f6b86;
+}
+
+.skills{
+	padding-top: 13vh;
+	font-size: 16px;
+}
+
+.skill{
+	padding-top: 7vh;
+}
+
+article{
+	padding-top: 7vh;
+	max-width: 700px;
+	border: 1px solid lightgrey;
+}
