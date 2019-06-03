@@ -26,10 +26,12 @@ div{
 .newOne{
 	color: lightblue;
 	padding-left: 30px;
+	background-color: #3f6b86;
+
 }
 
 .newOne:hover{
-	color: darkblue;
+	color: #e4e4e4;
 }
 
 .newOne::after{
@@ -60,10 +62,6 @@ div{
 	cursor: pointer;
 }
 
-.radioButton:hover input ~ .checkmark {
-  background-color: blue;
-}
-
 .checkmark {
   position: absolute;
   top: 0;
@@ -73,6 +71,7 @@ div{
   background-color: #ccc;
   border-radius: 50%;
   box-sizing: content-box;
+  border: 2px solid green;
 }
 
 .radioButton input:checked ~ .checkmark {
@@ -82,7 +81,8 @@ div{
 .checkmark:after {
   content: "";
   position: absolute;
-  display: none;
+  display: grey;
+  
 }
 
 .radioButton input:checked ~ .checkmark:after {
@@ -95,5 +95,15 @@ div{
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
+	background: #a0a0a0;
+}
+
+.radioButton input:checked ~ .checkmark:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
 	background: darkgreen;
 }
+

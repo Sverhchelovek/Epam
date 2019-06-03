@@ -15,7 +15,7 @@ ul{
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	color: yellowgreen;
+	color: #4169E0;
 }
 
 .main-page{
@@ -64,7 +64,7 @@ ul{
 
 .mainInformation{
 	text-align: center;
-	color: #800080;
+	color: #0F038E;
 	font-size: 20px;
 }
 
@@ -92,4 +92,21 @@ article{
 	padding-top: 7vh;
 	max-width: 700px;
 	border: 1px solid lightgrey;
+	color: #3f6b86;
+}
+
+.footer{
+	display: flex;
+	justify-content: space-between;
+	margin:  50px;
+	border-top: 2px solid black;
+}
+
+.footer_right{
+	display: flex;
+	justify-content: space-between;
+}
+
+.rights{
+	margin-left: 20px;
 }
