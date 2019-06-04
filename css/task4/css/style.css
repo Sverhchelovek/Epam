@@ -31,7 +31,7 @@ div{
 }
 
 .newOne:hover{
-	color: #e4e4e4;
+	background-color: darkblue;
 }
 
 .newOne::after{

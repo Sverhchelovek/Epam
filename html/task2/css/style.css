@@ -12,12 +12,6 @@ a{
 	color: inherit;
 }
 
-ul{
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 
 .forBorders th{
 	border: 1px solid grey;
@@ -38,4 +32,37 @@ td{
 
 div{
 	margin: 20px;
+}
+
+.lists{
+	display: flex;
+	justify-content: space-around;
+}
+
+.highlite{
+	font-weight: 600;
+}
+
+.b{
+	list-style-type: square;
+}
+
+.c{
+	list-style-type: circle;
+}
+
+.d{
+	list-style-type: none;
+}
+
+.f{
+	list-style-type: decimal-leading-zero;
+}
+
+.g{
+	list-style-type: lower-alpha;
+}
+
+.h{
+	list-style-type: lower-roman;
 }
