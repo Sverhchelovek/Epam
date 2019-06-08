@@ -1,0 +1,81 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+
+body {
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+	}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.main-page{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+	background-color: lightblue;
+}
+
+.logo{
+	font-size: 1.5rem;
+}
+
+.list{
+	display: flex;
+	justify-content: space-between;
+}
+
+.itemlist{
+	margin-left: 40px;
+}
+ 
+.itemlist:hover{
+	opacity: 0.5;
+	color: #fff;
+}
+
+.submenu{
+	visibility: hidden;
+} 
+
+.list li:hover .submenu{
+	visibility: visible;
+}
+
+.slider{
+	background-image: url(../img/team.jpg);
+	height: 500px;
+	background-size: cover;
+}
+
+.toCenter{
+	margin: 0 auto;
+	text-align: center;
+}
+
+.workers{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+}
+
+.co-workers{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+}
