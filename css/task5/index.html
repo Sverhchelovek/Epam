@@ -3,57 +3,197 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<title>Our company</title>
+
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 	<!-- normalize -->
 	<link rel="stylesheet" href="css/normalize.css">
+
 	<!-- custom styles -->
-	<link rel="stylesheet" href="css/style.css" >
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- media queries -->
+	<link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
 	<div class="container">
-		<header class="main-page">
-			<div class="logo"><a href="#">Prechu</a></div>
-			<nav >
-					<ul class="list">
-						<li class="itemlist"><a href="#nowhere" title="Lorum ipsum dolor sit amet">Home</a></li>
-						<li class="itemlist"><a href="#nowhere" title="Aliquam tincidunt mauris eu risus">Products</a>
-							<ul class="submenu">
-								<li><a href="">Phones</a></li>
-								<li><a href="">Computers</a></li>
-								<li><a href="">Headsets</a></li>
-								<li><a href="">Chairs</a></li>
-							</ul>
-						</li>
-						<li class="itemlist"><a href="#nowhere" title="Morbi in sem quis dui placerat ornare">About</a></li>
-						<li class="itemlist"><a href="#nowhere" title="Praesent dapibus, neque id cursus faucibus">Contact</a>
-					</ul>
-			</nav>
+		<header class="header">
+			<a href="#" class="logo-link">
+				<img src="img/icons/logo.png" alt="logo" class="logo-img">
+			</a>
+			<a href="#" class="company">Our company</a>
 		</header>
-		<section class="slider">
-			
-		</section>
-		<section>
-			<h2 class="toCenter">About us</h2>
-			<div class="workers">
-				<div class="co-workers">
-					<div class="co-worker">1</div>
-					<div class="co-worker">2</div>
-					<div class="co-worker">3</div>
-					<div class="co-worker">4</div>		
-				</div>
+			<nav class="menu">
+				<input type="checkbox" name="toggle" id="menu" class="toggle-menu">
+				<label for="menu" class="toggle-menu"><i class="fa fa-bars"></i>Меню</label>
+				<ul>
+					<li><a href="#"><i class="fa fa-home"></i>Главная</a></li>
+					<li>
+						<input type="checkbox" name="toggle" class="toggle-submenu" id="sub_m1">
+						<a href="#"><i class="fa fa-shopping-cart"></i>Продукция</a>
+						<label for="sub_m1" class="toggle-submenu"><i class="fa"></i></label>
+						<ul>
+							<li>
+								<input type="checkbox" name="toggle" class="toggle-submenu" id="sub_m2"><a href="#">Одежда</a>
+								<label for="sub_m2" class="toggle-submenu"><i class="fa"></i></label>
+								<ul>
+									<li><a href="#">Обувь</a></li>
+									<li><a href="#">Куртки</a></li>
+									<li><a href="#">Брюки</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Электроника</a>
+								<ul>
+									<li><a href="#">Камеры</a></li>
+									<li><a href="#">Компьютеры</a></li>
+									<li><a href="#">Телефоны</a>
+										<ul>
+											<li><a href="#">Samsung</a></li>
+											<li><a href="#">Nokia</a></li>
+											<li><a href="#">Xiaomi</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li><a href="#">Продукты</a></li>
+							<li><a href="#">Инструменты</a></li>
+							<li><a href="#">Химия</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-cogs"></i>Услуги</a></li>
+					<li><a href="#"><i class="fa fa-th-list"></i>Новости</a></li>
+					<li><a href="#"><i class="fa fa-envelope-open"></i>Контакты</a></li>
+				</ul>
+			</nav>
+		<main class="main clearfix">
+			<img src="img/about.jpg" alt="" class="main-img">
+			<h1>We design and develop</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae temporibus earum id adipisci fugiat fuga. Nemo voluptatum ipsa molestiae omnis porro. Facere molestiae nesciunt quam quisquam, tempora possimus ut non.</p>
+		</main>
 
-				<div class="co-workers">
-					<div class="co-worker">5</div>
-					<div class="co-worker">6</div>
-					<div class="co-worker">7</div>
-					<div class="co-worker">8</div>			
+		<div class="wrap">
+			<div class="slider-header">
+				<label for="slide-1">Перший слайд</label>
+				<label for="slide-2">Другий слайд</label>
+				<label for="slide-3">Третій слайд</label>
+				<label for="slide-4">Четвертий слайд</label>
+			</div>
+			
+			<input type="radio" name="slides" id="slide-1" checked>
+			<section class="slide slide-one">
+				<p>slide one</p>
+			</section>
+			<input type="radio" name="slides" id="slide-2">
+			<section class="slide slide-two">
+				<p>slide two</p>
+			</section>
+			<input type="radio" name="slides" id="slide-3">
+			<section class="slide slide-three">
+				<p>slide three</p>
+			</section>
+			<input type="radio" name="slides" id="slide-4">
+			<section class="slide slide-four">
+				<p>slide four</p>
+			</section>
+		</div>
+
+		<section class="about-us">
+			<h2>About us</h2>
+			<p class="sub-title">Our developers</p>
+			<div class="cards">
+				<div class="card">
+					<img src="img/me.jpg" alt="developer" class="card-img">
+					<p class="card-name">Shon Bohdan</p>
+					<p class="card-description">Front-end developer</p>
+					<ul class='card-socials'>
+						<li><a target="_blank" href="https://www.facebook.com/bogdan.shon"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						<li><a target="_blank" href="https://github.com/Sverhchelovek"><i class="fab fa-github"></i></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/bogdan.shon"><i class="fab fa-linkedin"></i></a></li>
+						<li><a target="_blank" href="https://www.facebook.com/bogdan.shon"><i class="fab fa-vk"></i></a></li>
+					</ul>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores magnam maxime repudiandae pariatur ipsa corrupti nihil nesciunt cupiditate earum atque, unde suscipit autem rem esse?</p>
+				</div>
+				<div class="card">
+					<img src="img/friend.jpg" alt="developer" class="card-img">
+					<p class="card-name">Lesiuk Alex</p>
+					<p class="card-description">Full-Stack developer</p>
+					<ul class='card-socials'>
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+						<li><a href="#"><i class="fab fa-github"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+					<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero aut, neque ab assumenda architecto repellendus maxime rerum alias labore, sequi soluta dolore at, perferendis facere nostrum eius! Natus rerum possimus vel perspiciatis similique facilis, nihil.</p>
 				</div>
 			</div>
-		</section>		
+		</section>
+		<section class="our-features">
+			<div class="feature">
+				<i class="feature-icon fab fa-accusoft"></i>
+				<p class="feature-title">UI / UX DESIGN</p>
+				<p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, explicabo.</p>
+			</div>
+			<div class="feature">
+				<i class="feature-icon fas fa-address-card"></i>
+				<p class="feature-title">UI / UX DESIGN</p>
+				<p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, explicabo.</p>
+			</div>
+			<div class="feature">
+				<i class="feature-icon fas fa-address-book"></i>
+				<p class="feature-title">UI / UX DESIGN</p>
+				<p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, explicabo.</p>
+			</div>
+			<div class="feature">
+				<i class="feature-icon fas fa-archway"></i>
+				<p class="feature-title">UI / UX DESIGN</p>
+				<p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, explicabo.</p>
+			</div>
+			<div class="feature">
+				<i class="feature-icon fab fa-algolia"></i>
+				<p class="feature-title">UI / UX DESIGN</p>
+				<p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, explicabo.</p>
+			</div>
+			<div class="feature">
+				<i class="feature-icon fab fa-acquisitions-incorporated"></i>
+				<p class="feature-title">UI / UX DESIGN</p>
+				<p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, explicabo.</p>
+			</div>
+			<div class="feature">
+				<i class="feature-icon fab fa-adn"></i>
+				<p class="feature-title">UI / UX DESIGN</p>
+				<p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, explicabo.</p>
+			</div>
+			<div class="feature">
+				<i class="feature-icon fab fa-android"></i>
+				<p class="feature-title">UI / UX DESIGN</p>
+				<p class="feature-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, explicabo.</p>
+			</div>
+		</section>
+		<section class="contacts">
+			<h2>Контакты</h2>
+			<i class="fas fa-phone"></i> 9-37-99-92<br>
+			<i class="fab fa-skype"></i> mySkypeName<br>
+			<ul class='card-socials'>
+				<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="#"><i class="fab fa-github"></i></a></li>
+				<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+			</ul>
+		</section>
+		<footer class="footer">
+			<span>DESIGNED BY BOGDAN SHON</span>
+			<ul class='card-socials'>
+				<li><a target="_blank" href="https://www.facebook.com/bogdan.shon"><i class="fab fa-facebook"></i></a></li>
+				<li><a target="_blank" href="https://github.com/Sverhchelovek"><i class="fab fa-github"></i></a></li>
+			</ul>
+		</footer>
 	</div>
+
 	
+	<script src="js/script.js"></script>
 </body>
 </html>

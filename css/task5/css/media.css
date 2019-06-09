@@ -1,0 +1,103 @@
+.menu [type="checkbox"],
+.menu label.toggle-submenu{
+	display: none;
+}
+
+.menu label.toggle-menu{
+	background-color: #4d97a3;
+	display: none;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	font-size: 14px;
+	cursor: pointer;
+	position: relative;
+}
+
+.menu label.toggle-menu .fa{
+	position: absolute;
+	top: 15px;
+	left: 12px;
+	font-size: 18px;
+}
+
+@media all and (max-width: 800px){
+
+	.menu > ul li > a i.fa{
+		left: 5px;
+	}
+
+	.menu ul{
+		display: none;
+	}
+
+	.menu li>ul li ul{
+		position: absolute;
+		top: auto;
+		right: auto;
+	}
+
+	.menu > ul li{
+		text-align: left;
+		border-bottom: 1px solid #4d97a3;
+		border-left: 2px solid #4d97a3;
+	} 
+
+	.menu label.toggle-menu{
+		display: block;
+	}
+
+	input.toggle-menu:checked + label.toggle-menu{
+		background-color: #3e474f;
+		color: #14b2cd;
+	}
+
+	input.toggle-menu:checked ~ ul,
+	input.toggle-submenu:checked ~ ul{
+		display: block;
+		position: relative;
+	}
+
+	.menu label.toggle-submenu{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		display: block;
+	}
+
+	.menu label.toggle-submenu .fa:before{
+		content: "\f0d7";
+		color: #3e474f;
+	} 
+
+	.menu label.toggle-submenu .fa{
+		position: absolute;
+		top: 15px;
+		right: 30px;
+	}
+
+	.menu input.toggle-submenu:checked ~ label.toggle-submenu .fa::before{
+		content: "\f0d8";
+		color: #3e474f;
+	}
+
+	.main-img{
+		float: none;
+		width: 80%;
+	}
+
+	.cards{
+		flex-direction: column;
+	}
+
+	.card{
+		width: 90%;
+		margin: 0 auto 10px;
+	}
+
+	.feature{
+		width: 50%;
+		margin: 0 auto;
+	}
+}
