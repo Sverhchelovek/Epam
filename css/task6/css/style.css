@@ -185,12 +185,12 @@ li .yellow{
 	display: inline-block;
 	position: absolute;
 	content: "";
-	width: 25px;
-	height: 25px;
+	width: 27px;
+	height: 27px;
 	border-radius: 50%;
 	border: 1px solid orange;
-	right: -3px;
-	bottom: 1px;
+	right: -4px;
+	bottom: 0px;
 
 
 }
