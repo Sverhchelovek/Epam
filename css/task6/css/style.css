@@ -78,6 +78,12 @@ h2{
 	padding: 25px;
 }
 
+.ul-size .active{
+	background-color: red;
+	padding: 4px;
+	border-radius: 50%;
+}
+
 .ul-size{
 	display: flex;
 	justify-content: space-between;
@@ -171,3 +177,20 @@ li .yellow{
   opacity: 0.8;
 }
 
+.ul-color li:first-child{
+	position: relative;
+}
+
+.ul-color li:first-child:after{
+	display: inline-block;
+	position: absolute;
+	content: "";
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	border: 1px solid orange;
+	right: -3px;
+	bottom: 1px;
+
+
+}
