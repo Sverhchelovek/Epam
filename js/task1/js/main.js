@@ -1,10 +1,9 @@
 let fibUserChoice = prompt('Скільки наступних чисел ви хочете отримати?');
-let fibDirection = confirm('Додатній ряд фібоначчі?');
 
 function* fib(n) {
     	var a = 0;
    		var b = 1;
-   		if (fibDirection = true) {
+   		if (confirm('Додатній ряд фібоначчі?')) {
 			for (var i = 2; i <= n; i++) {
 			    var c = a + b;
 			    a = b;
