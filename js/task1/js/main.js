@@ -1,8 +1,8 @@
 let fibUserChoice = prompt('Скільки наступних чисел ви хочете отримати?');
-
 function* fib(n) {
     	var a = 0;
    		var b = 1;
+   		let f = '';
    		if (confirm('Додатній ряд фібоначчі?')) {
 			for (var i = 2; i <= n; i++) {
 			    var c = a + b;
@@ -23,6 +23,22 @@ function* fib(n) {
 }
 	let fiboFin = fib(fibUserChoice);
 	
-	for(let value of fiboFin) {
-	  alert(value); 
+	// console.log(fiboFin.next(100));
+
+
+// 	for(let value of fiboFin) {
+// 	  alert(value); 
+// }
+for (var d = 1; d <= fibUserChoice; d++) {
+	fibUserChoice - 1;
+	if(fibUserChoice > 1){
+	console.log(fiboFin.next().value)
 }
+	else if(fibUserChoice== undefined){
+		fibUserChoice = prompt('Скільки наступних чисел ви хочете отримати?');
+	}
+}
+
+
+
+// prompt('Бажаєте продовжити і обрати наступних н чисел?')

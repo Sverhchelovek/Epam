@@ -16,3 +16,22 @@ ul{
 	margin: 0;
 	padding: 0;
 }
+
+
+.game{
+	max-width: 800px;
+	margin: 0 auto;
+	background-color: lightgrey;
+	padding: 25px;
+}
+
+.btn__start{
+	padding: 20px;
+	background-color: yellowgreen;
+	display: inline-block;
+	border-radius: 50%;
+}
+
+.number{
+	margin-top: 50px;
+}
