@@ -29,8 +29,7 @@ ul{
 	padding: 20px;
 	background-color: yellowgreen;
 	display: inline-block;
-	border-radius: 20%;
-	border-color: grey;
+	border-radius: 50%;
 }
 
 .number{

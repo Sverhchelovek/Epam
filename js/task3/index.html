@@ -14,12 +14,15 @@
 <body>
 	<section class="game">
 		<h1>Guess the number</h1>
-			<button class="btn__start" href="#" id='restartNumber'>Start the game!</button>
+			<a class="btn__start" href="#" onclick="randomNumber()">Start the game!</a>
 		<div class="number">
-			<input type="text" id="inputNumber"  name="inputNumber">
-			<input type="submit" id="inputNumbero"  name="inputNumber">
+			<form action="index.html">
+			<input type="text" id="inputNumber"  name="myNumber">			
+			<input type="submit" onclick="newHere()" value="Отправить">
+			</form>
 		</div>		
 	</section>
+
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

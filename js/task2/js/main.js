@@ -1,44 +1,35 @@
-let min = 1;
-let max = 100;
-
-let myNumber;
-
-function asd(){ // адекватно називати функці
-	let value = document.getElementById('inputNumber').value;
-
-	return value;
-}
-// asd();
-// let myNumber = asd();
+let inputNumber = document.querySelector('#inputNumber');
+let restartNumber = document.querySelector('#restartNumber');
 
 let randomNumber = function (min, max) {
-var rand = min - 0.5 + Math.random() * (max - min + 1)
+let rand = min - 0.5 + Math.random() * (max - min + 1)
 rand = Math.round(rand); 
 	return rand;
   }
+let newNumber = randomNumber(1, 100);
 
-let newNumb = randomNumber(1, 100);
-  	alert(newNumb);
-  	alert(myNumber);
-function newHere(newNumb){
-  	if(newNumb === myNumber){
-  	alert(newNumb);
-  	alert(myNumber);
-   	alert('u won')
-   } else if(myNumber > newNumb){
-  	alert(newNumb);
-  	alert(myNumber);
+inputNumbero.onclick = function() {
+	let myNumber = inputNumber.value;
+	if(newNumber === myNumber){
+   	alert('u won');
+   } else if(myNumber > newNumber){
    		max = myNumber;
-   		alert(min, max);
-
-   } else if(myNumber < newNumb){
-  	alert(newNumb);
-  	alert(myNumber);
+    	alert('need less number');
+   } else if(myNumber < newNumber){
    		min = myNumber;
-   		alert(min, max);
+   		alert('need bigger number');
    } 
-}
+};
 
+	restartNumber.addEventListener( 'click', function(){
+		newNumber = randomNumber(1, 100);
+		inputNumber.value = '';
+	});
+
+
+
+
+  	
 
 
  
