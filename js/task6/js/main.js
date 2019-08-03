@@ -1,61 +1,102 @@
-let canvas = document.getElementById("draw");
-let c = canvas.getContext("2d");
-
-let teta = 0;
-let timer;
-let x = 0;
-let y = 0;
-let x1 = 0;
-let y1 = 0;
-let x2 = 0;
-let y2 = 0;
+// window.onload = function() {
 
 
-function xEqualsY() {
-	teta= teta + 0.1;
-	x = x+teta;
-	y = y+teta;
-	c.fillStyle = '#f00';
-	c.fillRect(400+x, 400+y, 4, 4);
-	c.fillRect(400-x, 400-y, 4, 4);
-	timer = setTimeout(xEqualsY, 100);
+// }
+
+// let renderProjects = () => {
+//     for (let i = 0; i < projects.length; i++) {
+//         let card  = document.createElement('div');
+//             card.innerHTML = `
+//                         <div class="card__photo photo">
+                            
+//                         </div>
+//                         <div class="card__text">
+//                             <div class="price">
+//                                 <span class="price--orange"> </span><br>
+//                             </div>
+//                             <div class="adress">
+//                                 <span class="district"></span>
+//                                 <p class="location"> Продажа в Киеве, </p>
+//                             </div>
+//                             <a href="" class="button button__details">Details</a>
+//                         </div>
+//                         <ul class="card__description">
+//                             <li>
+//                                 <span>Код: </span><span class="code"></span>
+//                             </li>
+//                             <li>
+//                                 <span>Тип: </span><span class="type"></span>
+//                             </li>
+//                             <li>
+//                                 <span>Комната: </span><span class="room"></span>
+//                             </li>
+//                             <li>
+//                                 <span>Площа кв.м.: </span><span class="square"></span>
+//                             </li>
+//                             <li>
+//                                 <span>Поверх: </span><span class="floor"></span>
+//                             </li>
+//                         </ul>
+//                 `;
+
+//             card.classList.add('card');
+//             cards.appendChild(card);
+//             let photo = document.querySelectorAll('.photo');
+//             photo[i].style.backgroundImage = projects[i].photo
+
+//             let price = document.querySelectorAll('.price--orange');
+//             price[i].innerText = `$ ${projects[i].price} `;
+
+//             let location = document.querySelectorAll('.location');
+//             location[i].innerText = projects[i].location;
+
+//             let district = document.querySelectorAll('.district');
+//             district[i].innerHTML = ` Продажа квартиры в Киеве, <br> ${projects[i].district}`;
+
+//             let code = document.querySelectorAll('.code');
+//             code[i].innerText = projects[i].code;
+
+//             let type = document.querySelectorAll('.type');
+//             type[i].innerText = projects[i].type;
+
+//             let room = document.querySelectorAll('.room');
+//             room[i].innerText = projects[i].room;
+
+//             let square = document.querySelectorAll('.square');
+//             square[i].innerText = projects[i].square;
+
+//             let floor = document.querySelectorAll('.floor');
+//             floor[i].innerText = projects[i].floor;
+//     }
+// };
+
+// renderProjects();
+
+//   function addElement() {
+
+//     // создаем новый элемент div
+//     // и добавляем в него немного контента
+
+//     var newDiv = document.createElement("div");
+//         newDiv.innerHTML = "<h1>Привет!</h1>";
+
+//     // добавляем только что созданый элемент в дерево DOM
+
+//     my_div = document.getElementById("org_div1");
+//     document.body.insertBefore(newDiv, my_div);
+//   }
+
+//   addElement();
+
+
+
+// let a = JSON.parse(data);
+
+// let json = require('/Users/Documents/workspace/test.json');
+
+
+
+function load() {
+    var mydata = JSON.parse(data);
+    alert(mydata[0].tag);
 }
-
-xEqualsY();
-
-function yDoubleX() {
-	teta= teta + 0.001;
-	x1=(x1+teta);
-	y1=(Math.pow(x1, 2));
-	c.fillStyle = 'black';
-	c.fillRect(400+x1, 400+y1, 4, 4);
-	c.fillRect(400-x1, 400+y1, 4, 4);
-	timer = setTimeout(yDoubleX, 100);
-}
-
-yDoubleX();
-
-function xEqualsYPlusB() {
-	let b = 100;
-	teta= teta + 0.1;
-	x2 = x2+teta;
-	y2 = x2+b;
-	c.fillStyle = 'green';
-	c.fillRect(400+x2, 400+y2, 4, 4);
-	c.fillRect(400-x2, 600-y2, 4, 4);
-	timer = setTimeout(xEqualsYPlusB, 100);
-}
-xEqualsYPlusB();
-
-
-c.beginPath();
-c.moveTo(300, 200);
-c.lineTo(500, 200);
-c.lineTo(500, 800);
-c.lineTo(300, 800);
-
-c.closePath();
-c.strokeStyle = "red";
-c.stroke();
- 
-c.clip();

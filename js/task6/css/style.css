@@ -17,6 +17,27 @@ ul{
 	padding: 0;
 }
 
-#draw{
-	transform:  scale(1, -1);
-}
+    body {
+      margin: 0;
+      padding: 0; }
+    header, section {
+      width: 100%;
+      max-width: 1170px;
+      margin: 0 auto;
+      height: auto;
+      background-color: #f0ddc4; }
+    section {
+      background-color: #c2c2c2; }
+    ul.menu {
+      list-style-type: none;}
+    ul.menu li {
+      display: inline-block;
+      margin-right: 10px;}
+    ul.menu li a{
+      color: #000;
+      text-decoration: none;
+      font-size: 16px;
+      line-height: 30px;}
+    ul.menu li a:hover{
+      color: #fff;
+      border: 1px solid #fff;}
