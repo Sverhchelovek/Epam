@@ -1,0 +1,22 @@
+body {
+	font-family: sans-serif;
+}
+
+*{
+	box-sizing: border-box;
+	}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#draw{
+	transform:  scale(1, -1);
+}

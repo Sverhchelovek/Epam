@@ -12,17 +12,23 @@
 
 </head>
 <body>
-	<section class="game">
 		<h1>Guess the number</h1>
-			<a class="btn__start" href="#" onclick="randomNumber()">Start the game!</a>
+	<section class="game">
+		<button class="btn__start" href="#" id='restartNumber'>Start the game!</button>
 		<div class="number">
-			<form action="index.html">
-			<input type="text" id="inputNumber"  name="myNumber">			
-			<input type="submit" onclick="newHere()" value="Отправить">
-			</form>
-		</div>		
+			<input type="text" id="inputNumber"  name="inputNumber">
+			<input type="submit" value="play" id="inputNumbero"  name="inputNumber">
+		</div>
+		<h2 class="message"></h2>	
 	</section>
-
+	<section class="game">
+		<div class="player__block">
+			<span>Player</span>
+			<span class="playerScore"></span>
+		</div>
+		<span>Computer</span>
+		<span class="computerScore"></span>
+	</section>
 
 	<script type="text/javascript" src="js/main.js"></script>
 </body>

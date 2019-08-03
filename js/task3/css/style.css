@@ -17,21 +17,51 @@ ul{
 	padding: 0;
 }
 
+h1{
+	text-align: center;
+}
+
+span{
+	font-size: 25px;
+}
 
 .game{
 	max-width: 800px;
 	margin: 0 auto;
 	background-color: lightgrey;
 	padding: 25px;
+	/*margin-top: 30px;*/
 }
 
 .btn__start{
 	padding: 20px;
 	background-color: yellowgreen;
 	display: inline-block;
-	border-radius: 50%;
+	border-radius: 20%;
+	border-color: grey;
+	/*margin-top: 15px;*/
+}
+
+.player__block {
+	border-bottom: 2px solid #000;
+	line-height: 70px;
+	margin-bottom: 30px;
 }
 
 .number{
 	margin-top: 50px;
+}
+
+/*.computerScore {
+	display: none;
+}*/
+
+/*.computerScore_active {
+	display: inline-block;
+}*/
+
+.message {
+	text-align: center;
+	font-size: 36px;
+	color: red;
 }
